@@ -1,0 +1,9 @@
+pytorch_fc:
+  image: dsksd/deepstudy:0.3
+  ports:
+    - "7777:8888"
+    - "7007:6006"
+  volumes:
+    - ../:/notebooks/work
+  command: /run.sh
+  tty: true
